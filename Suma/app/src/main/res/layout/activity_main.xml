@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewIncio"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:text=""
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="164dp" />
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado Suma"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="444dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:text="Ingrese número 1:"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="164dp"
+        android:layout_below="@id/textViewIncio"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView"
+        android:text="Ingrese número 2:"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <EditText
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="152dp"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_alignBaseline="@+id/textView"/>
+
+    <EditText
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="236dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignBaseline="@+id/textView2"/>
+</RelativeLayout>
